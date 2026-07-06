@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "PhilHealth Data Bridge",
+  "version": "1.0",
+  "description": "Bridges data from PhilHealth SPA Generator to my local app.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://spagen.philhealth.gov.ph/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://spagen.philhealth.gov.ph/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": ["http://localhost/*", "http://127.0.0.1/*"]
+  }
+}
