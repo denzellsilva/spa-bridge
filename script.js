@@ -1,6 +1,6 @@
 // Replace this with the actual ID from your chrome://extensions page!
 // chrome
-const EXTENSION_ID = "edeofojjeddbgajejfleoghnlknendcf";
+const EXTENSION_ID = "ikjnhdnpafmbabhkgnkhfnpegphlgkge";
 
 const getData = document.querySelector("#get");
 
@@ -12,7 +12,7 @@ function handleGetDataClick() {
 
   // Send a request directly to your extension bridge
   chrome.runtime.sendMessage(
-    YOUR_EXTENSION_ID,
+    EXTENSION_ID,
     { action: "FETCH_TAB_DATA" },
     (response) => {
       if (response.error) {
