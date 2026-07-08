@@ -18,7 +18,8 @@
     "matches": [
       "http://localhost/*",
       "http://127.0.0.1/*",
-      "https://spa-bridge.vercel.app/*"
+      "https://spa-bridge.vercel.app/*",
+      "https://glowing-garbanzo-7vvjwxqrwp7p3rq75-3000.app.github.dev/*"
     ]
   }
 }
