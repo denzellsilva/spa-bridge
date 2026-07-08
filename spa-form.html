@@ -9,7 +9,57 @@
 <body>
 
     <!-- PAYOR'S COPY -->
-    <div class="slip-container">
+    <div class="slip-container payor">
+        <div class="header">
+            <h1>Philippine Health Insurance Corporation</h1>
+            <h2>PHILHEALTH PREMIUM PAYMENT SLIP</h2>
+        </div>
+
+        <div class="validation-box">
+            <div class="validation-title">VALIDATION DETAILS:</div>
+            <div class="validation-subtitle">(This is your PhilHealth Official Receipt when system validated)</div>
+        </div>
+        <div class="grid-container">    
+            <div class="field-group">
+                <span class="field-label">SPA No.:</span>
+                <div class="field-value" data-field="spa"></div>
+            </div>
+
+            <div class="field-group"> <!-- Aligns roughly with SPA No. -->
+                <span class="field-label">AMOUNT:</span>
+                <div class="field-value" data-field="amount"></div>
+            </div>
+            <div class="field-group">
+                <span class="field-label">MEMBER'S/AGENCY NAME:</span>
+                <div class="field-value" data-field="memberName"></div>
+            </div>
+            <div class="field-group">
+                <span class="field-label">PIN/PEN:</span>
+                <div class="field-value" data-field="pin"></div>
+            </div>
+
+            <div class="field-group signature-section">
+                <div class="field-label">CERTIFIED CORRECT:</div>
+                <div class="field-value">
+                    <div data-field="certifiedBy"></div>
+                    <span class="signature-subtext">MEMBER'S/AGENCY NAME/ REPRESENTATIVE<br>(PRINTED NAME & SIGNATURE/DATE)</span>
+                </div>
+            </div>
+            
+            <div class="field-group">
+                <span class="field-label">CONTACT NO./ EMAIL:</span>
+                <div class="field-value" data-field="contact"></div>
+            </div>
+        </div>
+        
+        <div class="footer-tag">PAYOR'S COPY</div>
+    </div>
+
+    <div class="divider">
+        <span class="divider-text">DETACH HERE</span>
+    </div>
+
+    <div class="slip-container philhealth">
         <div class="header">
             <h1>Philippine Health Insurance Corporation</h1>
             <h2>PHILHEALTH PREMIUM PAYMENT SLIP</h2>
@@ -52,25 +102,25 @@
             </div>
         </div>
 
-        <div class="footer-tag">PAYOR'S COPY</div>
+        <div class="footer-tag">PHILHEALTH'S COPY</div>
     </div>
 
 
-    <div class="divider">
+    <!-- <div class="divider">
         <span class="divider-text">DETACH HERE</span>
-    </div>
+    </div> -->
 
 
     <!-- PHILHEALTH'S COPY -->
-    <div class="slip-container">
+    <!-- <div class="slip-container">
         <div class="header">
             <h1>Philippine Health Insurance Corporation</h1>
             <h2>PHILHEALTH PREMIUM PAYMENT SLIP</h2>
-        </div>
+        </div> -->
 
-        <div class="grid-container">
+        <!-- <div class="grid-container"> -->
             <!-- Left Column -->
-            <div>
+            <!-- <div>
                 <div class="validation-box">
                     <div class="validation-title">VALIDATION DETAILS:</div>
                     <div class="validation-subtitle">(This is your PhilHealth Official Receipt when system validated)</div>
@@ -91,10 +141,10 @@
                     <div class="field-value" data-field="certifiedBy"></div>
                     <span class="signature-subtext">MEMBER'S/ AGENCY NAME/ REPRESENTATIVE<br>(PRINTED NAME & SIGNATURE/DATE)</span>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Right Column -->
-            <div>
+            <!-- <div>
                 <div class="field-group" style="margin-top: 95px;">
                     <span class="field-label">AMOUNT:</span>
                     <div class="field-value" data-field="amount"></div>
@@ -113,7 +163,7 @@
         </div>
 
         <div class="footer-tag">PHILHEALTH'S COPY</div>
-    </div>
+    </div> -->
 
     <script>
         (function injectAndPrint() {
