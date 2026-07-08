@@ -1,6 +1,6 @@
 // Replace this with the actual ID from your chrome://extensions page!
 // chrome
-const EXTENSION_ID = "ikjnhdnpafmbabhkgnkhfnpegphlgkge";
+const EXTENSION_ID = "bococolnpokchjbjhkihipaehgfkmdfb";
 
 const printButton = document.querySelector("#print-spa");
 
