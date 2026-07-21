@@ -50,21 +50,11 @@ chrome.runtime.onMessageExternal.addListener(
 
 function extractDataFromPage() {
   // Finds the inputs by looking for the placeholder text you see on the screen
-  const pinInput =
-    // document.querySelector('input[placeholder*="PIN"]') ||
-    document.querySelector("#pin");
-  const lastNameInput =
-    // document.querySelector('input[placeholder*="Last Name"]') ||
-    document.querySelector("#lastName");
-  const firstNameInput =
-    // document.querySelector('input[placeholder*="First Name"]') ||
-    document.querySelector("#firstName");
-
-  // For the popup elements, we grab them by targeting the text contents
-  const spa = document.querySelector("#infoSpa");
-  // || document.querySelector(".spa-class");
-  const amount = document.querySelector("#infoAmount");
-  // || document.querySelector(".amount-class");
+  const pinInput = document.querySelector("#pin").value;
+  const lastNameInput = document.querySelector("#lastName").value;
+  const firstNameInput = document.querySelector("#firstName").value;
+  const spa = document.querySelector("#infoSpa").innerText;
+  const amount = document.querySelector("#infoAmount").innerText;
 
   return {
     philHealthNumber: pinInput ? pinInput.value : "PIN field not found",
